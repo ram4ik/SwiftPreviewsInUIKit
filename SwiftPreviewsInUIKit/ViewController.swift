@@ -60,6 +60,8 @@ struct ViewController_Preview: PreviewProvider {
             UIViewControllerPreview {
                 ViewController()
             }
+            .previewDevice(PreviewDevice(rawValue: deviceName))
+            .previewDisplayName(deviceName)
         }
     }
 }
